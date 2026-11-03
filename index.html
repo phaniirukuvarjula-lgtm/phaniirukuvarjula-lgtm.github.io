@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phani Kumar | GRC & Operational Risk Portfolio</title>
+
+<meta name="description" content="Professional portfolio showcasing GRC implementation, Operational Risk Management, ERM, RCSA, SaaS Risk Management and Risk Analytics.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #111827;
+    border-bottom: 1px solid #263449;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    padding: 110px 10%;
+    background: linear-gradient(135deg, #111827, #172554);
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero h2 {
+    color: #38bdf8;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+.tagline {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    border: 1px solid #38bdf8;
+    border-radius: 30px;
+    color: #38bdf8;
+    font-size: 13px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 12px;
+    padding: 12px 22px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #0369a1;
+}
+
+.button.secondary {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 900px;
+    color: #cbd5e1;
+}
+
+.skills {
+    background: #111827;
+}
+
+.skill-container,
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.skill-card,
+.project-card {
+    background: #172033;
+    border: 1px solid #29384e;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.skill-card h3,
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.skill-card p,
+.project-card p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.project-card ul {
+    margin: 15px 0 0 20px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.project-card li {
+    margin-bottom: 6px;
+}
+
+.projects {
+    background: #0f172a;
+}
+
+.frameworks {
+    background: #111827;
+}
+
+.framework-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.framework-list span {
+    background: #172033;
+    border: 1px solid #334155;
+    color: #7dd3fc;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact {
+    text-align: center;
+    background: linear-gradient(135deg, #172554, #111827);
+}
+
+.contact p {
+    color: #cbd5e1;
+}
+
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #080d18;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+@media(max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 75px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">PHANI KUMAR</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Expertise</a>
+<a href="#projects">Projects</a>
+<a href="#frameworks">Frameworks</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+
+<span class="tagline">GRC | ORM | ERM | RISK ANALYTICS</span>
+
+<h1>Phani Kumar</h1>
+
+<h2>Governance, Risk & Compliance | Operational Risk Management</h2>
+
+<p>
+Exploring the intersection of Operational Risk Management,
+Enterprise Risk Management, Governance, Risk & Compliance
+and Data Analytics through practical project implementations.
+</p>
+
+<p style="margin-top:15px;">
+Building practical risk management solutions using GRC platforms,
+risk assessment methodologies and business intelligence tools.
+</p>
+
+<a href="#projects" class="button">Explore Projects</a>
+
+<a href="#about" class="button secondary">About Me</a>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am a commerce graduate with professional experience in business
+operations and customer-focused processes, developing my expertise
+in Operational Risk Management, Enterprise Risk Management and
+Governance, Risk & Compliance.
+</p>
+
+<br>
+
+<p>
+My practical project work focuses on applying risk management
+methodologies to a small-scale manufacturing business and SaaS
+business scenarios. The work includes risk identification,
+Risk and Control Self-Assessment (RCSA), control evaluation,
+risk treatment, compliance management and monitoring.
+</p>
+
+<br>
+
+<p>
+I have worked with platforms and analytical tools including
+Eramba, CISO Assistant, Power BI, Tableau, Grafana, Excel
+and HubSpot CRM to develop practical risk management
+and monitoring capabilities.
+</p>
+
+</section>
+
+
+<!-- EXPERTISE -->
+
+<section class="skills" id="skills">
+
+<h2 class="section-title">Core Expertise</h2>
+
+<div class="skill-container">
+
+<div class="skill-card">
+<h3>Operational Risk Management</h3>
+<p>Operational risk identification, assessment, RCSA,
+control effectiveness and mitigation planning.</p>
+</div>
+
+<div class="skill-card">
+<h3>Enterprise Risk Management</h3>
+<p>Enterprise risk registers, risk scoring,
+risk monitoring and risk treatment.</p>
+</div>
+
+<div class="skill-card">
+<h3>Governance & Compliance</h3>
+<p>GRC implementation, compliance management,
+control mapping and governance processes.</p>
+</div>
+
+<div class="skill-card">
+<h3>Risk Analytics</h3>
+<p>Risk dashboards, Key Risk Indicators,
+monitoring trends and management reporting.</p>
+</div>
+
+<div class="skill-card">
+<h3>SaaS Risk Management</h3>
+<p>SaaS risk assessments, customer health,
+ARR, MRR, NRR and SLA monitoring.</p>
+</div>
+
+<div class="skill-card">
+<h3>Risk Assessment</h3>
+<p>Risk scenarios, likelihood and impact analysis,
+residual risk and mitigation strategies.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+
+<h2 class="section-title">Project Implementations</h2>
+
+<div class="project-container">
+
+
+<div class="project-card">
+
+<h3>01. Enterprise Risk Management & ORM</h3>
+
+<p>
+Practical enterprise and operational risk management
+implementation for a manufacturing business.
+</p>
+
+<ul>
+<li>Enterprise Risk Register</li>
+<li>Risk and Control Self-Assessment</li>
+<li>Risk scoring and prioritisation</li>
+<li>Control effectiveness evaluation</li>
+<li>Risk mitigation planning</li>
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>02. Eramba – GRC Implementation</h3>
+
+<p>
+Configuration and implementation of a GRC platform
+for business risk and compliance management.
+</p>
+
+<ul>
+<li>Docker-based deployment</li>
+<li>Business risk configuration</li>
+<li>Risk assessments and treatment</li>
+<li>Compliance management</li>
+<li>RCSA mitigation projects</li>
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>03. CISO Assistant</h3>
+
+<p>
+Information security risk assessment and
+risk treatment implementation.
+</p>
+
+<ul>
+<li>Risk scenario configuration</li>
+<li>Information security assessments</li>
+<li>Risk treatment strategies</li>
+<li>Security control considerations</li>
+<li>Mitigation planning</li>
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>04. SaaS Risk & Revenue Management</h3>
+
+<p>
+SaaS operational risk assessment combined
+with customer and revenue management.
+</p>
+
+<ul>
+<li>SaaS Risk Register and RCSA</li>
+<li>ARR, MRR and NRR analysis</li>
+<li>Customer health monitoring</li>
+<li>SLA monitoring</li>
+<li>Customer concentration analysis</li>
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>05. Power BI – Risk Analytics</h3>
+
+<p>
+Business intelligence dashboards for enterprise
+and SaaS risk monitoring.
+</p>
+
+<ul>
+<li>Enterprise Risk Dashboard</li>
+<li>Enterprise Risk KPIs</li>
+<li>SaaS Risk Dashboard</li>
+<li>Risk analysis and reporting</li>
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>06. Tableau – Risk Analytics</h3>
+
+<p>
+Analytical dashboards for SaaS revenue
+and Key Risk Indicator monitoring.
+</p>
+
+<ul>
+<li>SaaS KRI monitoring</li>
+<li>Revenue analytics</li>
+<li>Risk trend visualisation</li>
+<li>Management reporting</li>
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>07. Grafana – KRI Monitoring</h3>
+
+<p>
+Monitoring and visualisation of SaaS
+Key Risk Indicator status and trends.
+</p>
+
+<ul>
+<li>Grafana installation</li>
+<li>KRI dashboard configuration</li>
+<li>Status and trend monitoring</li>
+<li>Risk visualisation</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FRAMEWORKS -->
+
+<section class="frameworks" id="frameworks">
+
+<h2 class="section-title">Frameworks & Methodologies</h2>
+
+<div class="framework-list">
+
+<span>COSO ERM</span>
+<span>ISO 31000</span>
+<span>RCSA</span>
+<span>Operational Risk Management</span>
+<span>Enterprise Risk Management</span>
+<span>COBIT</span>
+<span>SOX</span>
+<span>GRC</span>
+<span>Risk Assessment</span>
+<span>Risk Mitigation</span>
+<span>Key Risk Indicators</span>
+<span>Internal Controls</span>
+<span>Basel III – Learning Focus</span>
+
+</div>
+
+</section>
+
+
+<!-- TOOLS -->
+
+<section class="skills">
+
+<h2 class="section-title">Tools & Platforms</h2>
+
+<div class="framework-list">
+
+<span>Eramba</span>
+<span>CISO Assistant</span>
+<span>Power BI</span>
+<span>Tableau</span>
+<span>Grafana</span>
+<span>Microsoft Excel</span>
+<span>HubSpot CRM</span>
+<span>Docker</span>
+<span>ServiceNow</span>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Connect With Me</h2>
+
+<p>
+Interested in Operational Risk, GRC, ORM,
+Risk Analytics and business process improvement.
+</p>
+
+<p style="margin-top:20px;">
+
+GitHub:
+<a href="https://github.com/phaniirukuvarjula-lgtm"
+target="_blank">View GitHub Profile</a>
+
+</p>
+
+<p style="margin-top:12px;">
+
+LinkedIn:
+<a href="https://www.linkedin.com/"
+target="_blank">LinkedIn Profile</a>
+
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Phani Kumar | GRC & Operational Risk Portfolio</p>
+
+<p>Built with HTML, CSS and GitHub Pages.</p>
+
+</footer>
+
+</body>
+</html>
