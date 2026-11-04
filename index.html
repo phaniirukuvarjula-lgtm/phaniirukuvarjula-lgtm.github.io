@@ -456,7 +456,18 @@ implementation for a manufacturing business.
 <li>Control effectiveness evaluation</li>
 <li>Risk mitigation planning</li>
 </ul>
-
+<!-- RISK REGISTER POPUP BUTTON -->
+<button onclick="openRiskRegister()" style="
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;">
+    View Risk Register
+</button>
 </div>
 
 
@@ -735,7 +746,48 @@ GitHub Profile
     <img id="lightboxImage" src="" alt="Project Screenshot">
 </div>
 <footer>
+<!-- RISK REGISTER POPUP -->
+<div id="riskRegisterModal" style="
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;">
 
+    <div style="
+        background: white;
+        width: 95%;
+        height: 90%;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;">
+
+        <button onclick="closeRiskRegister()" style="
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            z-index: 10;
+            padding: 8px 14px;
+            background: #dc2626;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;">
+            Close ✕
+        </button>
+
+        <iframe
+        src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fphaniirukuvarjula-lgtm%2Fphaniirukuvarjula-lgtm.github.io%2Fmain%2Fdocs%2F02_Risk_Analytics%2FRisk%20Register.xlsx"
+            width="100%"
+            height="100%"
+            frameborder="0">
+        </iframe>
+
+    </div>
+</div>
 <p>© 2026 Phani Kumar | GRC & Operational Risk Portfolio</p>
 
 <p>Built with HTML, CSS and GitHub Pages.</p>
@@ -775,6 +827,13 @@ document.addEventListener('keydown', function(e) {
     }
 
 });
-</script>
+// RISK REGISTER POPUP FUNCTIONS
+function openRiskRegister() {
+    document.getElementById('riskRegisterModal').style.display = 'flex';
+}
+
+function closeRiskRegister() {
+    document.getElementById('riskRegisterModal').style.display = 'none';
+}</script>
 </body>
 </html>
