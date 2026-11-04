@@ -247,7 +247,57 @@ footer {
     }
 
 }
+/* PROJECT IMAGE GALLERY */
 
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.04);
+    border-color: #38bdf8;
+}
+
+/* IMAGE POPUP */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
 </style>
 </head>
 
@@ -637,7 +687,12 @@ GitHub Profile
 
 </section>
 
+<!-- IMAGE POPUP -->
 
+<div class="lightbox" id="imageLightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImage" src="" alt="Project Screenshot">
+</div>
 <footer>
 
 <p>© 2026 Phani Kumar | GRC & Operational Risk Portfolio</p>
@@ -645,6 +700,40 @@ GitHub Profile
 <p>Built with HTML, CSS and GitHub Pages.</p>
 
 </footer>
+<script>
+document.querySelectorAll('.project-gallery img').forEach(img => {
 
+    img.addEventListener('click', function() {
+
+        document.getElementById('imageLightbox').style.display = 'flex';
+
+        document.getElementById('lightboxImage').src = this.src;
+
+    });
+
+});
+
+function closeLightbox() {
+
+    document.getElementById('imageLightbox').style.display = 'none';
+
+}
+
+document.getElementById('imageLightbox').addEventListener('click', function(e) {
+
+    if (e.target === this) {
+        closeLightbox();
+    }
+
+});
+
+document.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+
+});
+</script>
 </body>
 </html>
